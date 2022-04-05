@@ -1,0 +1,11 @@
+# Serverless
+.serverless
+
+# Node
+node_modules
+
+# Rust
+target
+
+# Tags
+tags.*

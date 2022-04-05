@@ -1,0 +1,21 @@
+service: serverless-with-rust
+provider:
+  name: aws
+  runtime: rust
+  memorySize: 128
+  stage: dev
+  region: eu-central-1
+
+package:
+  individually: true
+
+custom:
+  rust:
+    dockerless: true
+
+plugins:
+  - serverless-rust
+
+functions:
+  endpoint:
+    handler: "serverless-with-rust"
